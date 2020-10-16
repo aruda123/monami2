@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+@import url("../common.css");
+
+
+#detail-wrap{
+	margin-top: 30px;
+}
+#detail-wrap .detail-div{
+	display: flex;
+	justify-content: center;
+}
+#detail-wrap .detail-div .img-div img{
+	width: 540px;
+}
+#detail-wrap .detail-div>form{
+	display: flex;
+}
+#detail-wrap .detail-div .text-div{
+	margin-left: 65px;
+	width: 580px;
+	min-height: 652px;
+}
+#detail-wrap .detail-div .text-div .top-btn-div{
+	float: right;
+}
+#detail-wrap .detail-div .text-div .top-btn-div a{
+	display: block;
+    width: 90px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+#detail-wrap .detail-div .text-div .top-btn-div a:nth-child(2){
+	margin-top: 10px;
+}
+#detail-wrap .detail-div .text-div span.brand:after{
+	content: "";
+	display: inline-block;
+	margin-top: 7px;
+	margin-left: 10px;
+	width: 7px;
+	height: 11px;
+	background: url("/images/board/goods.png") no-repeat -26px 0;
+	vertical-align: top;
+}
+#detail-wrap .detail-div .text-div span.title{
+	font-size: 36px;
+	font-weight: 500;
+	letter-spacing: -0.04em;
+}
+#detail-wrap .detail-div .text-div .border-bottom-div {
+	border-bottom: 2px solid #000;
+}
+#detail-wrap .detail-div .text-div div:first-child span{
+	display: block;
+}
+#detail-wrap .detail-div .text-div .content-div{
+	margin-top: 40px;
+}
+#detail-wrap .detail-div .text-div .content-div ul{
+	display: flex;
+	flex-direction: column;
+}
+#detail-wrap .detail-div .text-div .content-div ul:first-child{
+	border-bottom: 1px solid #eee;
+}
+#detail-wrap .detail-div .text-div .content-div ul li{
+	margin-bottom: 20px;
+}
+#detail-wrap .detail-div .text-div .content-div ul li span{
+	padding-left: 75px;
+}
+#detail-wrap .detail-div .text-div .content-div ul li .price{
+	color: #ff3c00;
+	font-size: 18px;
+	font-weight: 700;
+	padding-left: 15px;
+}
+#detail-wrap .detail-div .text-div .content-div ul li button{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 15px;
+    padding: 0px 10px;
+    height: 30px;
+    line-height: 26px;
+    border-radius: 3px;
+	float: right;
+}
+
+
+#detail-wrap .detail-div .text-div .content-div ul:nth-child(2) {
+	margin-top: 25px;
+	border-bottom: 1px solid #000;
+}
+#detail-wrap .detail-div .text-div .content-div ul:nth-child(2) li:first-child span{
+	padding-left: 40px;
+}
+#detail-wrap .detail-div .text-div .content-div ul:nth-child(2) li:nth-child(3) span{
+	padding-left: 90px;
+}
+
+
+
+
+#detail-wrap .detail-div .text-div .content-div .total-div{
+	font-size: 20px;
+	line-height: 93px;
+	text-align: right;
+}
+#detail-wrap .detail-div .text-div .content-div .total-div strong {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 93px;
+	vertical-align: top;	
+}
+#detail-wrap .detail-div .text-div .content-div .total-div em{
+	display: inline-block;
+	width: 240px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 93px;
+}
+
+
+
+#detail-wrap .detail-div .text-div .content-div .btn-div{
+	display: flex;
+	border-bottom: 1px solid #000;
+	padding-bottom: 20px;
+}
+#detail-wrap .detail-div .text-div .content-div .btn-div button{
+	width: 236px;
+	margin-left: 10px;
+	padding: 0 40px;
+	height: 40px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
+#detail-wrap .detail-div .text-div .content-div .btn-div .btn-cart{
+	background-color: #555;
+	border: 1px solid #555;
+}
+#detail-wrap .detail-div .text-div .content-div .btn-div .btn-buy{
+	background-color: #000;
+	border: 1px solid #000;
+}
+#detail-wrap .detail-div .text-div .content-div .btn-div .btn-wish{
+	color: #333;
+	padding: 0;
+	width: 88px;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-color: #999;
+}
+
+
+
+
+/* ///////////////////수정 div//////////////////////// */
+#detail-wrap .update-div {
+	display: none;
+	text-align: center;
+}
+
+#detail-wrap .update-div>span {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+#detail-wrap .update-div>div {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+#detail-wrap .update-div div form input {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#detail-wrap .update-div div form input[type=checkbox] {
+	display: inline-block;
+	margin: 0;
+}
+
+#detail-wrap .update-div .label-div {
+	text-align: left;
+}
+
+#detail-wrap .update-div .label-div span {
+	padding-right: 20px;
+}
+
+#detail-wrap .update-div .btn {
+	margin-top: 30px;
+}
+
+#detail-wrap .update-div .btn button {
+	display: inline-block;
+	width: 100px;
+	border: 1px solid #ccc;
+	margin-right: 20px;
+	padding: 5px;
+	background-color: #fff;
+}
+
+
+
+
+
+#detail-wrap .comment-write{
+	display: flex;
+	justify-content: center;
+}
+#detail-wrap .comment-write textarea{
+	padding: 20px;
+}
+#detail-wrap .comment-write button{
+	vertical-align: bottom;
+    width: 70px;
+    padding: 17px;
+    background-color: #03c75a;
+    border-radius: 5px;
+    border: 1px solid #03c75a;
+    color: #fff;
+}
+
+#comment{
+    width: 930px;
+    margin: 10px auto;
+}
+#comment ul{
+	display: flex;
+	flex-direction: column;
+}
+#comment ul li{
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+#comment span{
+	display: block;
+}
+#comment span:nth-of-type(3){
+	display: inline-block;
+}
+#comment .btn-div{
+	display: inline-block;
+	float: right;
+}
+#comment button, #comment a{
+	margin-right: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #333;
+	padding: 0 5px;
+}
+#comment .id{
+	font-weight: 700;
+	font-size: 13px;
+}
+#comment .date{
+	font-size: 12px;
+	color: #999;
+}
+
+
+

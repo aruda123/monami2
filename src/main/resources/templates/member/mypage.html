@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>모나미몰연습용 사이트</title>
+<link rel="stylesheet" type="text/css" href="/css/member/mypage.css">
+<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/member/mypage.js"></script>
+<script src="/js/header-menu.js"></script>
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample6_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var fullAddr = data.address; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                	fullAddr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                	fullAddr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+					//조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+                    fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample6_postcode').value = data.zonecode;
+                document.getElementById("sample6_address").value = fullAddr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById("sample6_detailAddress").focus();
+            }
+        }).open();
+    }
+</script>
+</head>
+<body>
+	<div th:insert="~{commons/header :: header}"></div>
+	<main id="contents" class="member join">
+		<h1>마이페이지</h1>
+		<span class="reg-span">마이페이지</span>
+		<div class="join-step2">
+			<form action="/member/mypageChange" method="post" onsubmit="return mypagechange()">
+				<div class="joinform-div">
+					<h3>개인정보관리</h3>
+					<ul>
+						<li>
+							<label>
+								<strong>이름<em class="bl-need">*</em></strong>
+								<input type="text" class="reg_name readOnly" name="name" th:value="${session.login.name}" readonly>
+							</label>
+						</li>
+						<li>
+							<label>
+								<strong>아이디<em class="bl-need">*</em></strong>
+								<input type="text" class="reg_id readOnly" name="id" th:value="${session.login.id}" readonly>
+							</label>
+						</li>
+						<li>
+							<label>
+								<strong>비밀번호<em class="bl-need">*</em></strong>
+								<input type="password" class="reg_pwd" name="pwd" placeholder="영문/숫자/특수문자 중 2가지 조합, 6~16자 이내" maxlength="10">
+								<span class="alterror">비밀번호를 확인해주세요</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<strong>비밀번호확인<em class="bl-need">*</em></strong>
+								<input type="password" class="reg_pwd_check" placeholder="비밀번호 재입력" maxlength="16">
+								<span class="alterror">입력한 비밀번호가 서로 	일치하지 않습니다.</span>
+							</label>
+						</li>
+						<li>
+							<label>
+								<strong>이메일<em class="bl-need">*</em></strong>
+								<input type="hidden" class="hidden_email" th:value="${session.login.email}">
+								<input type="text" class="input_small reg_email"  name="email" th:value="${session.login.email}">
+								<span class="alterror">이메일을 확인해주세요</span>
+							</label>
+							<button type="button" class="btn-white" onclick="email_check_btn()">중복확인</button>
+						</li>
+						<li>
+							<label>
+								<strong>휴대폰번호<em class="bl-need">*</em></strong>
+								<input type="number" class="reg_phone readOnly" name="phone" th:value="${session.login.phone}" readonly>
+							</label>
+						</li>
+						<li class="bar address">
+							<strong>주소</strong>
+							<input type="button" class="btn-white" onclick="sample6_execDaumPostcode()" value="주소 찾기">
+							<input type="text" id="sample6_postcode" class="readOnly" name="gibun" th:value="${session.login.gibun}" readonly>
+							<input type="text" id="sample6_address" class="readOnly" name="addr" th:value="${session.login.addr}" readonly><br>
+							<input type="text" id="sample6_detailAddress" name="addrDetail" th:value="${session.login.addrDetail}" placeholder="상세주소">
+						</li>
+						<li>
+							<label>
+								<strong>생년월일</strong>
+								<input type="text" class="reg_birth readOnly" name="birth" th:value="${session.login.birth}" readonly>
+							</label>
+						</li>
+						<li>
+							<div class="txt-agree">
+								<strong>수신동의</strong>
+								<label>
+									<input type="checkbox" class="small">
+									<span>SMS를 통한 상품 및 이벤트 정보 수신에 동의 합니다. [선택]</span>
+								</label>
+								<label>
+									<input type="checkbox" class="small">
+									<span>이메일을 통한 상품 및 이벤트 정보 수신에 동의 합니다. [선택]</span>
+								</label>
+								<ul class="infotxt">
+									<li>
+										SMS 및 이메일 수신동의와 무관하게 주문결제/회원 관련 안내 메일/문자는 발송되며 
+										<br>
+										수신미동의 시 쇼핑몰 이용에 제약은 없습니다.
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="btn-area">
+						<button type="button" class="btn-white" onclick="mypage_cancel_btn()">취소</button>
+						<button type="submit" class="btn-black" onclick="regForm_btn()">확인</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</main>
+	<div th:insert="~{commons/footer :: footer}"></div>
+</body>
+</html>

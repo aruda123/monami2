@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 12345678
+    url: jdbc:mysql://34.64.169.153:3306/the?serverTimezone=Asia/Seoul
+    username: the
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    hibernate:
+      use-new-id-generator-mappings: true
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: ysdnclefasdmdlpf
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: aruda123456@gmail.com
+  profiles:
+    include: oauth

@@ -1,0 +1,391 @@
+@charset "UTF-8";
+@import url("../common.css");
+
+.alterror{
+	display: none;
+	margin-top: 5px;
+	line-height: 20px;
+	color: #ff1414;
+	font-size: 12px;
+	font-weight: 300;
+}
+.member .join-step2 .joinform-div >ul>li>label>.alterror:before{
+	content: "";
+	display: inline-block;
+	margin: 0 5px 2px 0;
+	width: 11px;
+	height: 11px;
+	background: url("/images/bl_comm.png") no-repeat -62px -30px;
+	vertical-align: middle;
+}
+.member .reg-span{
+	display: block;
+	height: 190px;
+	line-height: 190px;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 300;
+	letter-spacing: -0.04em;
+	background-color: #faf9f7;
+}
+
+.member .join-step0{
+	position: relative;
+	margin: 60px auto 0;
+	width: 450px;
+}
+.member .join-step0 label{
+	position: relative;
+	display: block;
+	margin-bottom: 10px;
+	padding-left: 115px;
+}
+.member .join-step0 label strong {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	line-height: 50px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+}
+.member .join-step0 label input{
+	height: 50px;
+	line-height: 50px;
+}
+#member .join-step0 .btn-black:hover{
+	cursor: pointer;
+}
+#member .join-step0 .btn-black{
+	margin-top: 19px;
+	width: 100%;	
+}
+#member .join-step0 .btn-black.big{
+	padding: 0 30px;
+	height: 64px;
+	line-height: 62px;
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+
+.member.join .sns-login{
+	overflow: visible;
+	margin-top: 32px;
+	padding-top: 29px;
+	border-top: 1px solid #ececec;
+}
+.member.join .sns-login span{
+	display: block;
+	color: #333;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+.member.join .sns-login .sns-list{
+	margin: 29px auto 0;
+	font-size: 0;
+	text-align: center;
+}
+.member.join .sns-login .sns-list li{
+	display: inline-block;
+	width: 33.3333%;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: top;
+}
+.member.join .sns-login .sns-list li button{
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	font-weight: 700;
+	border: none;
+}
+.member.join .sns-login .sns-list li button:before {
+	content: "";
+	display: block;
+	margin: 0 auto 7px;
+	width: 56px;
+	height: 55px;
+	text-align: left;
+	text-indent: -9999px;
+	background: url("/images/bl_comm.png") no-repeat 0 -80px;
+}
+.member.join .sns-login .sns-list li .naver:before {
+	background-position: 0 -80px;
+}
+.member.join .sns-login .sns-list li .kakao:before {
+	background-position: -58px -80px;
+}
+.member.join .sns-login .sns-list li .facebook:before {
+	background-position: -115px -80px;
+}
+
+
+.member .join-step0{
+	margin: 44px auto 0;
+	width: 650px;
+}
+.member .join-step0 > p{
+	line-height: 51px;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: -0.04em;
+}
+.member .join-step0 > p.step01{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+}
+.member .join-step0 > p.step01_s{
+	text-align: center;
+	font-size: 20px;
+	color: #666;
+	line-height: 40px;
+	font-weight: 400;
+}
+
+
+.member .join-step0.type2{
+	width: 650px;
+}
+.member .join-step0.type2 .join-box{
+	margin: 50px 0 0 0;
+	border-top: 1px solid #333;
+}
+.member .join-step0.type2 .total-join{
+	width: 405px;
+	margin: auto;
+	padding: 60px 0 0 0;
+	box-sizing: border-box;
+	border-top: none;
+	text-align: center;
+}
+.member .join-step0.type2 .total-join a{
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: 64px;
+	line-height: 64px;
+	font-size: 20px;
+}
+
+
+/*////////////// 페이지2 //////////////*/
+.member .join-step1{
+	margin: 20px auto 0;
+	width: 1200px;
+}
+.member .step{
+	margin-top: 61px;
+	text-align: center;
+}
+.member .step span{
+	position: relative;
+	display: inline-block;
+	padding: 0 53px 0 56px;
+	color: #666;
+	font-size: 20px;
+	letter-spacing: -0.04em;
+}
+.member .step span:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+    transform: translateY(-50%);
+	display: inline-block;
+	width: 11px;
+	height: 22px;
+	background: url("/images/bl_comm.png") no-repeat -27px 0;
+}
+.member .step span.active{
+	color: #000;
+	font-weight: 700;
+}
+.member .step span.active:before {
+	background: none;
+}
+
+
+.member .join-step1 .join-agree-div{
+	margin: 40px auto 0;
+	width: 650px;
+}
+.member .join-step1 .join-agree-div .allcheck{
+	padding-left: 25px;
+	line-height: 54px;
+}
+.member .join-step1 .join-agree-div .allcheck span{
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.member .join-step1 .join-agree-div ul{
+	border-top: 1px solid #000;
+}
+.member .join-step1 .join-agree-div ul li{
+	width: 100%;
+	height: 70px;
+	padding: 25px;
+	position: relative;
+	border: 1px solid #ececec;
+	border-top: none;
+}
+.member .join-step1 .join-agree-div ul li span{
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.member .join-step1 .btn-area{
+	margin-top: 36px;
+	text-align: center;
+}
+.member .join-step1 .join-agree-div button{
+	margin: 0 3px;
+}
+.member .join-step1 .join-agree-div .btn-white{
+	border-color: #999;
+	color: #666;
+}
+
+
+/*//////////////// 회원가입 페이지 /////////////////*/
+.member .join-step2{
+	margin: 20px auto 0;
+	width: 1200px;
+}
+.member .join-step2 .joinform-div{
+	margin: 59px auto 0;
+	width: 650px;
+}
+.member .join-step2 .joinform-div h3{
+	line-height: 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.member .join-step2 .joinform-div .txt-need{
+	margin-top: -17px;
+	color: #666;
+	font-size: 13px;
+	text-align: right;
+}
+.member .join-step2 .joinform-div .txt-need em{
+	display: inline-block;
+	margin-top: 3px;
+	vertical-align: middle;
+	font-weight: normal;
+}
+.member .join-step2 .joinform-div p{
+	margin-top: 7px;
+	text-align: center;
+	color: #999;
+	font-size: 13px;
+	font-weight: 300;
+}
+.member .join-step2 .joinform-div p label{
+	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+}
+.member .join-step2 .joinform-div>ul{
+	margin-top: 17px;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #ccc;
+}
+.member .join-step2 .joinform-div>ul>li{
+	position: relative;
+	padding: 5px 0 5px 158px;
+	float: none;
+}
+.member .join-step2 .joinform-div ul li:first-child {
+	padding-top: 19px;
+}
+.member .join-step2 .joinform-div>ul>li> .txt-agree label {
+	display: block;
+	line-height: 29px;
+}
+.member .join-step2 .joinform-div>ul>li> .txt-agree label span{
+	font-size: 14px;
+}
+.member .join-step2 .joinform-div span:before{
+	width: 0;
+}
+.member .join-step2 .joinform-div ul li strong{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 158px;
+	line-height: 50px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+}
+.member .join-step2 .joinform-div> ul> li> button{
+	position: absolute;
+	top: 7px;
+	right: 0;
+	width: 141px;
+}
+.member .join-step2 .joinform-div ul li:first-child strong{
+	top: 19px;
+}
+.member .join-step2 .joinform-div ul li strong em{
+	display: inline-block;
+	margin-left: 3px;
+	font-weight: normal;
+}
+.member .join-step2 .joinform-div ul li .infotxt{
+	margin: 3px 0 1px;
+	width: auto;
+	height: 63px;
+}
+.member .join-step2 .joinform-div ul li .infotxt li{
+	padding-top: 3px;
+	line-height: 19px;
+	color: #999;
+	font-size: 13px;
+	font-weight: 300;
+}
+.member .join-step2 .joinform-div ul li .infotxt li:before{
+	content: "*";
+	top: 6px;
+	left: 0;
+	display: inline-block;
+	width: auto;
+	height: auto;
+}
+.member .join-step2 .joinform-div ul li.bar{
+	margin-top: 24px;
+	padding-top: 29px;
+	border-top: 1px solid #ccc;
+}
+.member .join-step2 .joinform-div ul li .input_small{
+	width: 344px;
+}
+.member .join-step2 .joinform-div .btn-area{
+	margin-top: 24px;
+	text-align: center;
+}
+.member .join-step2 .joinform-div .btn-area button{
+	margin: 0 3px;
+}
+.member .join-step2 .joinform-div .btn-area .btn-white{
+	border-color: #999;
+	color: #666;
+}
+.member .join-step2 .joinform-div>p>label>span{
+	font-size: 14px;
+	padding: 10px 0;
+}
+.member .join-step2 .joinform-div>ul>li.bar>label>.reg_birth{
+	margin-top: -20px;
+}
+
+

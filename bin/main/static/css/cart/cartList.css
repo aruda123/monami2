@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url("../common.css");
+
+#cart-wrap{
+	width: 960px;
+	margin: 40px auto;
+	margin-bottom: 20px;
+}
+#cart-wrap .allCheck-div{
+	margin-bottom: 10px;
+}
+#cart-wrap .allCheck-div .allCheck{
+	margin-right: 8px;
+}
+#cart-wrap .ul-wrap{
+	overflow: hidden;
+	border-top: 1px solid #eee;
+	padding-top: 25px;
+}
+#cart-wrap .ul-wrap .nullText{
+	display: block;
+	text-align: center;
+	font-size: 40px;
+}
+#cart-wrap .ul-wrap li{
+	display: flex;
+	float: none;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+#cart-wrap .ul-wrap li .checkBox{
+	width: 100px;
+	margin: 50px 50px 0 0;
+}
+#cart-wrap .ul-wrap li>div{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+#cart-wrap .ul-wrap li img{
+	width: 120px;	
+	height: 120px;
+	margin-right: 10px;
+}
+#cart-wrap .ul-wrap li span{
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+	letter-spacing: -1px;
+}
+#cart-wrap .ul-wrap li .date{
+	font-size: 13px;
+	color: #555;
+}
+#cart-wrap .ul-wrap li .title{
+	font-size: 20px;
+}
+#cart-wrap .ul-wrap li .price{
+	font-weight: 700;
+	padding-top: 7px;
+}
+#cart-wrap .ul-wrap li .icon-div{
+	width: 100%;
+	display: block;
+}
+#cart-wrap .ul-wrap li .icon-div i{
+	float: right;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+#cart-wrap .priceTot{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+#cart-wrap .btn-div{
+	display: flex;
+	justify-content: flex-end;
+}
+#cart-wrap .btn-div button{
+	width: 150px;
+	height: 50px;
+	padding: 5px;
+	border: none;
+	background-color: #2E8DE5;
+	color: #fff;
+	border-radius: 7px;
+}
+

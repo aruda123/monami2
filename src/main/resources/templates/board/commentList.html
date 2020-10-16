@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+
+<script type="text/javascript">
+	$(function(){
+		$("#reply .replyDeleteBtn").click(replyDeleteBtn);
+	});
+	
+	
+	//댓글 삭제 처리
+	function replyDeleteBtn(){
+		var no = $(this).parent().siblings("input").val();
+		if(confirm("댓글을 삭제 하시겠습니까?")){
+			$.ajax({
+				url: "/board/commentDelete",
+				data: {"no" : no},
+				success: function(result){
+					alert(result);
+					 location.reload();
+				}
+			});
+		}
+	}
+</script>
+
+	<ul id="reply">
+		<li th:each="co : ${comment}">
+			<span class="id">[[${co.id}]]</span>
+			<span class="date" th:text="${#temporals.format(co.reg_date, 'yyyy-MM-dd')}"></span>
+			<span class="content">[[${co.content}]]</span>
+			<th:block th:if="${session.login} != null">
+				<div class="btn-div" th:if="${session.login.id} == ${co.id}">
+					<input type="hidden" class="commentNo" th:value="${co.no}">
+					<div class="replyBtn">
+						<button type="button" class="replyUpdateDtn">수정</button>
+						<button type="button" class="replyDeleteBtn">삭제</button>
+					</div>
+				</div>
+			</th:block>
+		</li>
+	</ul>
+	
+	

@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+#btnTop{
+	display: block;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 30;
+}
+#btnTop a{
+	display: inline-block;
+	width: 62px;
+	height: 62px;
+	text-align: left;
+	text-indent: -9999px;
+	background: url("/images/btn_comm.png") no-repeat -210px 0;
+}
+#footer{
+	position: relative;
+	width: 100%;
+	border-top: 1px solid #ececec;
+}
+#footer .inner{
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+}
+#footer .inner:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#footer .util{
+	padding: 35px 0 30px;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #ececec;
+}
+#footer .util .btn-whitegray{
+	display: inline-block;
+	padding: 0 40px;
+	height: 40px;
+	line-height: 38px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 3px;
+}
+#footer .util .btn-whitegray.small{
+	height: 28px;
+	line-height: 26px;
+}
+#footer .util .notice{
+	position: relative;
+	float: left;
+	width: 376px;
+	height: 119px;
+}
+#footer .util .notice strong {
+	display: block;
+	color: #000;
+	font-size: 14px;
+}
+#footer .util .notice .btn-more{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	display: inline-block;
+	padding: 5px;
+	width: 15px;
+	height: 15px;
+	text-align: left;
+}
+#footer .util .notice .btn-more:after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url("/images/bl_comm.png") no-repeat 0 -250px;
+}
+#footer .util .notice ul{
+	margin-top: 15px;
+}
+#footer .util .notice ul li a{
+	position: relative;
+	display: block;
+	padding: 0 70px 0 0;
+	line-height: 23px;
+}
+#footer .util .notice ul li .txt-subject{
+	display: block;
+	color: #555;
+	font-size: 13px;
+	font-weight: 300;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#footer .util .notice ul li .txt-date{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	color: #666;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+
+#footer .util .customer{
+	position: relative;
+	float: left;
+	margin-left: 25px;
+	padding-left: 20px;
+	border-left: 1px solid #ececec;
+	width: 375px;
+	height: 119px;
+}
+#footer .util .customer strong {
+	display: block;
+	color: #000;
+	font-size: 14px;
+}
+#footer .util .customer .info{
+	margin-top: 17px;
+	line-height: 23px;
+	color: #555;
+	font-size: 13px;
+	font-weight: 300;
+}
+#footer .util .customer .info em{
+	display: block;
+    margin-bottom: 5px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+#footer .util .customer .info strong{
+	display: inline-block;
+    color: #555;
+    font-size: 13px;
+    font-weight: 400;	
+}
+
+
+#footer .util .customer .btn-area{
+	position: absolute;
+	top: 25px;
+	right: 0;
+}	
+#footer .util .customer .btn-area a{
+	display: block;
+	padding: 0;
+	margin-top: 10px;
+	width: 103px;
+	color: #555;
+	font-size: 13px;
+}
+#footer .util .customer .btn-area a:after {
+	content: "";
+	display: inline-block;
+	margin-left: 9px;
+	width: 5px;
+	height: 8px;
+	background: url("/images/bl_comm.png") no-repeat -17px -250px;
+}
+
+
+#footer .util .helper{
+	float: left;
+	margin-left: 20px;
+	padding-left: 26px;
+	border-left: 1px solid #ececec;
+	width: 185px;
+	height: 119px;
+}
+#footer .util .helper strong{
+	display: block;
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+}
+#footer .util .helper strong small {
+	display: block;
+	margin-bottom: 15px;
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+}
+#footer .util .helper .btn-area a{
+	display: block;
+	margin-top: 13px;
+	padding: 0;
+	width: 142px;
+	color: #555;
+	font-size: 13px;
+}
+#footer .util .helper .btn-area a:after {
+	content: "";
+	display: inline-block;
+	margin-left: 9px;
+	width: 5px;
+	height: 8px;
+	background: url("/images/bl_comm.png") no-repeat -17px -250px;
+}
+
+
+#footer .util .sns{
+	float: left;
+	margin-left: 25px;
+	padding-left: 32px;
+	border-left: 1px solid #ececec;
+	width: 175px;
+	height: 119px;
+}
+#footer .util .sns strong {
+	display: block;
+	color: #000;
+	font-size: 14px;
+}
+#footer .util .sns .btn-area{
+	margin-top: 20px;
+}
+#footer .util .sns .btn-area a{
+	display: block;
+	margin-top: 6px;
+	line-height: 20px;
+	color: #555;
+	font-size: 13px;
+	font-weight: 300;
+}
+#footer .util .sns .btn-area a:before {
+	content: "";
+	display: inline-block;
+	margin-right: 9px;
+	width: 22px;
+	height: 22px;
+	background: url("/images/bl_comm.png") no-repeat -24px -250px;
+	vertical-align: top
+}
+#footer .util .sns .btn-area a.btn-Instagram:before {
+	background-position: -24px -250px;
+}
+#footer .util .sns .btn-area a.btn-facebook:before {
+	background-position: -48px -250px;
+}
+
+
+#footer .cont .inner{
+	padding: 0 0 40px 234px;
+	box-sizing: border-box;
+}
+#footer .cont .logo{
+	position: absolute;
+	top: 107px;
+	left: 0;
+	width: 137px;
+	height: 21px;
+	text-align: left;
+	text-indent: -9999px;
+	background: url("/images/logo.png") no-repeat 0 -30px;
+}
+#footer .cont nav{
+	padding-top: 19px;
+}
+#footer .cont nav ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#footer .cont nav ul li:first-child {
+	padding-left: 0;
+}
+#footer .cont nav ul li{
+	padding-left: 50px;
+	line-height: 40px;
+}
+#footer .cont nav ul li a{
+	color: #000;
+	font-size: 14px;
+}
+#footer .cont nav ul li a strong{
+	font-weight: 500;
+}
+
+
+#footer .cont .familysite{
+	position: absolute;
+	top: 19px;
+	right: 0;
+	width: 201px;
+}
+
+
+#footer .cont .copyright{
+	margin-top: 13px;
+}
+#footer .cont .copyright address {
+	display: block;
+	line-height: 21px;
+	color: #555;
+	font-size: 12px;
+	font-weight: 300;
+}
+#footer .cont .copyright p{
+	margin-top: 13px;
+	line-height: 21px;
+	color: #555;
+	font-size: 12px;
+	font-weight: 300;
+}
+#footer .cont .copyright p small{
+	display: block;
+	margin-top: 5px;
+	font-size: 12px;
+}
+#footer .cont .escrow{
+	position: absolute;
+	top: 78px;
+	right: 0;
+	width: 201px;
+}
+#footer .cont .escrow strong {
+	display: block;
+	color: #000;
+	font-size: 14px;
+}
+#footer .cont .escrow p{
+	margin-top: 6px;
+	line-height: 21px;
+	color: #555;
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: -0.05em;	
+}
+
+
+#footer .secure{
+	padding: 10px 0 20px;
+	border-top: 1px solid #ececec;
+	text-align: center;
+}
+#footer .secure img{
+	padding: 0 15px;
+}
+
+
+

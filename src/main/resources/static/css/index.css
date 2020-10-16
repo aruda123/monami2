@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import url("common.css");
+
+/* /////////////////////////////////////////// */
+/* //////visual.css/////////////////////////// */
+/* /////////////////////////////////////////// */
+
+#visual-area{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	z-index: -1;
+}
+#visual-area ul{
+	display: flex;
+	position: relative;
+	top:0;
+	left: 0;
+}
+#visual-area ul li{
+	display: block;
+	width: 100%;
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+}
+#visual-area ul li.bg1{
+	background-image: url("/images/main_img1.jpg");
+}
+#visual-area ul li.bg2{
+	background-image: url("/images/main_img2.jpg");
+}
+#visual-area ul li.bg3{
+	background-image: url("/images/main_img3.jpg");
+}
+/* ////prev-next 버튼////////// */
+#visual{
+	position: relative;
+}
+
+#visual #btn-wrap{
+	position: absolute;
+	width:100%;
+	top:250px;
+	left: 0px;
+	display: none;
+}
+#visual:hover #btn-wrap{
+	display: block;
+}
+#visual div.btn{
+	display: flex;
+	justify-content: space-between;
+}
+
+#visual div.btn a{
+	display:inline-block;
+	width: 52px;
+	height: 52px;
+	background-position: center;
+}
+
+
+.slide-txt{
+    margin-top: 50px;
+    position: absolute;
+    top: 50px;
+    right: 350px;
+    z-index: -1;
+    text-align: right;
+}
+.slide-txt a{
+	position: relative;
+	display: inline-block;
+}
+.slide-txt .txt-ti{
+	padding: 29px 0;
+}
+
+
+#visual .next-button{
+	position: absolute;
+	top: 260px;
+	right: 200px;
+	width: 38px;
+	height: 66px;
+	background: url("/images/next_button.png") no-repeat -40px -120px;
+	outline: none;
+	cursor: pointer;
+	z-index: 1;
+}
+#visual .prev-button{
+	position: absolute;
+	top: 260px;
+	left: 200px;
+	display: inline-block;
+	width: 38px;
+	height: 66px;
+	background: url("/images/next_button.png") no-repeat 0 -120px;
+	outline: none;
+	cursor: pointer;
+	z-index: 1
+}
+
+
+#visual .page_button{
+	position: absolute;
+	left: 900px;
+	bottom: 31px;
+	text-align: center;
+	z-index: 1
+}
+.page_bullet{
+	display: inline-block;
+	background: #000;
+	cursor: pointer;
+}
+#visual .page_button .page_bullet{
+	margin: 0 3px;
+	width: 36px;
+	height: 6px;
+	background-color: rgb(255, 255, 255, 1);
+	opacity: 1;
+	border-radius: 0
+}
+
+
+#contents .inner{
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+}
+#contents .inner:nth-of-type(1){
+	margin-top: 80px;
+}
+#contents .cont-list{
+	position: relative;
+	margin-top: 0;
+	margin-left: -50px;
+	padding: 0 50px 6px 50px;
+	width: 1300px;
+	box-sizing: border-box;
+}
+#contents .cont-list .list1{
+	margin-bottom: 80px;
+}
+#contents .cont-list .list ul li:first-child {
+	margin-left: 0;
+}
+#contents .cont-list .list1 ul li{
+	text-align: center;
+	margin-left: 40px;
+	width: 580px;
+}
+#contents .cont-list .list .tag{
+	display: block;
+	margin-top: 18px;
+}
+#contents .cont-list .list a span{
+	display: block;
+	margin-top: 0;
+	color: #555;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: -0.025em;
+	line-height: 22px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#contents .cont-list .list1 a img{
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	height: 400px;
+}
+#contents .cont-list .list a strong {
+	position: relative;
+	display: block;
+	margin: 30px 0 0 0;
+	padding: 0 0 15px 0;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: -0.025em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#contents .cont-list .list a strong:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	display: inline-block;
+	width: 20px;
+	height: 0;
+	background-color: #000;
+}
+
+
+#contents .cont-list .list2 ul li{
+	margin-left: 27px;
+	width: 280px;
+	text-align: center;
+}
+#contents .cont-list .list2 ul li:nth-child(2){
+	margin-left: 26px;
+}
+#contents .cont-list .list2 a img{
+	width: 280px;
+	height: 280px;
+}
+#contents .cont-list .list3 ul li{
+	width: 1200px;
+	text-align: center;
+}
+#contents .cont-list .list3 a img{
+	width: 1200px;
+	height: 450px;
+	margin-top: 80px;
+}
+#contents .cont-list .list a.lk-tag{
+	display: inline-block;
+	margin-top: 6px;
+	padding: 0 7px;
+	width: auto;
+	line-height: 27px;
+	color: #666;
+	font-size: 14px;
+	background-color: #f2f2f2;
+}
+
+
+#contents .instagram{
+	margin-top: 47px;
+}
+#contents .instagram h2{
+	text-align: center;
+	color: #222;
+	font-size: 48px;
+	letter-spacing: -0.01em;
+}
+#contents .instagram h2 small{
+	display: block;
+	margin-bottom: 16px;
+	color: #666;
+	font-size: 16px;
+}
+#contents .instagram ul{
+	margin-top: 40px;
+}
+#contents .instagram ul li{
+	float: left;
+	width: 12.5%;
+}
+#contents .instagram ul li img{
+	width: 100%;
+}
+
+
+
+
+
+

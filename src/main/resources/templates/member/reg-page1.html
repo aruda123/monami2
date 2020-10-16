@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>모나미몰연습용 사이트</title>
+<link rel="stylesheet" type="text/css" href="/css/member/reg-page.css">
+<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/member/login.js"></script>
+<script src="/js/header-menu.js"></script>
+</head>
+<body>
+	<div th:insert="~{commons/header :: header}"></div>
+	<main id="contents" class="member join">
+		<h1>회원가입페이지</h1>
+		<span class="reg-span">회원가입</span>
+			<div class="join-step0 type2">
+				<p class="step01_s">Stationery Lifestyle Shop</p>
+				<p class="step01">모나미몰에 오신 걸 환영합니다.</p>
+				<div class="join-box">
+					<div class="total-join">
+						<a href="/member/reg-page2" class="btn-black">회원가입하기</a>
+					
+					<div class="sns-login">
+						<span>SNS 로그인</span>
+						<ul class="sns-list">
+							<li>
+								<button type="button" class="naver">NAVER</button>
+							</li>
+							<li>
+								<button type="button" class="kakao">KAKAO</button>
+							</li>
+							<li>
+								<button type="button" class="facebook">FACEBOOK</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div th:insert="~{commons/footer :: footer}"></div>
+</body>
+</html>

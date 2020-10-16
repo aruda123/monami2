@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url("../common.css");
+
+.member .login-span{
+	display: block;
+	height: 190px;
+	line-height: 190px;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 300;
+	letter-spacing: -0.04em;
+	background-color: #faf9f7;
+}
+.member .tab-area{
+	position: relative;
+	margin: 43px auto 0;
+	width: 650px;
+}
+.member .tab-menu button{
+	float: left;
+	display: inline-block;
+	width: 50%;
+	line-height: 50px;
+	text-align: center;
+	background-color: #fff;
+	color: #999;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	border-bottom: 3px solid #ddd;
+}
+.member .tab-menu button.active{
+	color: #000;
+	border-bottom-color: #000;
+}
+.member .tab-menu:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+.member .findIdPwd-field{
+	position: relative;
+	margin: 60px auto 0;
+	width: 405px;
+}
+.member .findIdPwd-field label{
+	position: relative;
+	display: block;
+	margin-bottom: 10px;
+	padding-left: 115px;
+}
+.member .findIdPwd-field label strong {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	line-height: 50px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+}
+.member .findIdPwd-field label input{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.findIdPwd .findIdPwd-field .btn-black:hover{
+	cursor: pointer;
+}
+.findIdPwd .findIdPwd-field .btn-black{
+	margin-top: 19px;
+	width: 100%;	
+}
+.btn-black.big{
+	padding: 0 30px;
+	height: 64px;
+	line-height: 62px;
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+.findIdPwd label > span, #nomember label > span{
+	position: absolute;
+	display: inline-block;
+	font-size: 14px;
+	color: #999;
+	top: 18px;
+	left: 138px;
+}
+
+
+.member.login .etc-list{
+	margin: 28px auto 0;
+	width: 405px;
+}
+.member.login .etc-list:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.member.login .etc-list li{
+	float: left;
+	position: relative;
+	width: 33.3333%;
+	line-height: 14px;
+}
+.member.login .etc-list li:after{
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	background-color: #ccc;
+}
+.member.login .etc-list li a{
+	display: block;
+	color: #555;
+	font-size: 14px;
+	text-align: center;
+}
+.member.login .etc-list li:nth-of-type(1):after{
+	background-color: #fff;
+}
+
+
+.member.login .sns-login{
+	overflow: visible;
+	margin-top: 32px;
+	padding-top: 29px;
+	border-top: 1px solid #ececec;
+}
+.member.login .sns-login span{
+	display: block;
+	color: #333;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+.member.login .sns-login .sns-list{
+	margin: 29px auto 0;
+	width: 502px;
+	font-size: 0;
+	text-align: center;
+}
+.member.login .sns-login .sns-list li{
+	display: inline-block;
+	width: 33.3333%;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: top;
+}
+.member.login .sns-login .sns-list li button{
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	font-weight: 700;
+	border: none;
+}
+.member.login .sns-login .sns-list li button:before {
+	content: "";
+	display: block;
+	margin: 0 auto 7px;
+	width: 56px;
+	height: 55px;
+	text-align: left;
+	text-indent: -9999px;
+	background: url("/images/bl_comm.png") no-repeat 0 -80px;
+}
+.member.login .sns-login .sns-list li .naver:before {
+	background-position: 0 -80px;
+}
+.member.login .sns-login .sns-list li .kakao:before {
+	background-position: -58px -80px;
+}
+.member.login .sns-login .sns-list li .google{
+	width: 56px;
+	height: 55px;
+}
+.member.login .sns-login .sns-list li .google+span{
+	margin-top: 3px;
+	font-weight: 700;
+}
+
+
+.loging-error{
+	display: none;
+	margin-top: 5px;
+	line-height: 20px;
+	color: #ff1414;
+	font-size: 12px;
+	font-weight: 300;
+}
+.loging-error:before{
+	content: "";
+	display: inline-block;
+	margin: 0 5px 2px 0;
+	width: 11px;
+	height: 11px;
+	background: url("/images/bl_comm.png") no-repeat -62px -30px;
+	vertical-align: middle;
+}
+
+
+
+.findIdPwd .pTagDiv{
+	width: 405px;
+	margin: 5px auto 0;
+}
+.findIdPwd .pTagDiv p{
+	padding-top: 3px;
+	line-height: 19px;
+	color: #999;
+	font-size: 13px;
+	font-weight: 300;
+}
+#findPwd{
+	display: none;
+}
+
+
+#resultId, #resultPwd{
+	display: none;
+	margin: 60px auto 0;
+	width: 650px;
+	text-align: center;
+}
+#resultId p, #resultPwd p{
+	padding: 28px 30px 31px;
+	line-height: 32px;
+	color: #555;
+	font-size: 16px;
+	border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+	background-color: #f9f9f9;
+}
+#resultId p strong, #resultPwd p strong {
+	color: #333;
+	font-weight: 500;
+}
+#resultId button, #resultPwd button{
+	margin-top: 25px;
+	width: 405px;
+}
+

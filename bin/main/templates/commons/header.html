@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<header th:fragment="header">
+		<h1>상단영역</h1>
+		<div id="header-wrap">
+			<section>
+				<a href="#" class="btn-allmenu allmenu-btn">
+					<span class="allmenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				<a href="#" class="btn-allmenu btn-allmenu-close">
+					<span class="allmenu">X</span>
+				</a>
+			</section>
+			<div class="all-side-menu">
+				<span>전체메뉴</span>
+			</div>
+			<h1 class="logo">
+				<a href="/"></a>
+			</h1>
+			<nav class="header-menu">
+				<ul>
+					<li class="stationery">
+						<a href="/board/stationery/1" class="header_menu_a1">
+							<span>
+								<small class="header_menu_small1">문구</small>
+								Stationery
+							</span>
+						</a>
+						<div class="subnav">
+							<ul>
+								<li>
+									<a href="/board/stationery">
+										<span>프리미엄 펜</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>153프리미엄</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>데스크펜/스마트펜</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>파카</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>카렌다쉬</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>카웨코</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>메뉴스크립트</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<span>펜/펜슬</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>볼펜</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>수성펜/사인펜</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>연필/샤프</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>형광펜</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<span>마카</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>네임펜/유성매직</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>생활/보드마카</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>패브릭/세라믹마카</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<span>컬러링/브러쉬</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>컬러링펜</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>브러쉬펜</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>미술용품</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<span>디자인 문구</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>다이어리/노트</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>카드/봉투</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>파우치</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>풀/스티커/테이프</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>스탬프</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>데스크용품</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>모나미 MD상품</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="monamipet">
+						<a href="/board/monamipet/1" class="header_menu_a2">
+							<span>
+								<small class="header_menu_small2">모나미펫</small>
+								MonamiPet
+							</span>
+						</a>
+						<div class="subnav">
+							<ul>
+								<li>
+									<a href="/board/monamipet">
+										<span>DOG</span>
+									</a>
+									<ul>
+										<li>
+											<a href="/board/monamipet">
+												<span>사료</span>
+											</a>
+											<ul>
+												<li>
+													<a href="/board/monamipet">
+														<span>건식사료</span>
+													</a>
+												</li>
+												<li>
+													<a href="/board/monamipet">
+														<span>습식사료</span>
+													</a>
+												</li>
+												<li>
+													<a href="/board/monamipet">
+														<span>퍼피</span>
+													</a>
+												</li>
+												<li>
+													<a href="/board/monamipet">
+														<span>어덜트</span>
+													</a>
+												</li>
+												<li>
+													<a href="/board/monamipet">
+														<span>시니어</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">
+												<span>간식</span>
+											</a>
+											<ul>
+												<li>
+													<a href="#">
+														<span>동결건조간식</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>껌</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>저키/트릿</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>비스킷/소시지</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>캔/파우치</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>수제간식/영양제</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">
+												<span>용품</span>
+											</a>
+											<ul>
+												<li>
+													<a href="#">
+														<span>홈리빙</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>배변</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>그루밍</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>외출</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>놀이/훈련</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>패션</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">
+												<span>프리미엄 식품관</span>
+											</a>
+											<ul>
+												<li>
+													<a href="#">
+														<span>K9</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>맥아담스</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>카나간</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>헤일로</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>오리젠</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>윔지스</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<span>CAT</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>사료</span>
+											</a>
+											<ul>
+												<li>
+													<a href="#">
+														<span>건식사료</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>습식사료</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>키튼</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>어덜트</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>시니어</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">
+												<span>간식</span>
+											</a>
+											<ul>
+												<li>
+													<a href="#">
+														<span>동결건조간식</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>저키/트릿</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>비스킷/소시지</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>캔/파우치</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>수제간식/영양제</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>캣닢/캣그라스</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">
+												<span>용품</span>
+											</a>
+											<ul>
+												<li>
+													<a href="#">
+														<span>홈리빙</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>배변</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>그루밍</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>외출</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>놀이/훈련</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>패션</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">
+												<span>프리미엄 식품관</span>
+											</a>
+											<ul>
+												<li>
+													<a href="#">
+														<span>K9(필라인)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>RAWZ</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>아카나</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>헤일로</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>오리젠</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>게더</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="hobby">
+						<a href="#" class="header_menu_a3">
+							<span>
+								<small class="header_menu_small3">취미DIY</small>
+								Craft&amp;Hobby
+							</span>
+						</a>
+						<div class="subnav">
+							<ul>
+								<li>
+									<a href="#">
+										<span>DIY/KIT</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>아트/북</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>클래스</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="monarte">
+						<a href="#" class="header_menu_a4">
+							<span>
+								<small class="header_menu_small4">모나르떼</small>
+								Monarte
+							</span>
+						</a>
+						<div class="subnav">
+							<ul>
+								<li>
+									<a href="#">
+										<span>모나르떼</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="storypick">
+						<a href="#" class="header_menu_a5">
+							<span>
+								<small class="header_menu_small5">스토리픽</small>
+								Story Pick
+							</span>
+						</a>
+						<div class="subnav">
+							<ul>
+								<li>
+									<a href="#">
+										<span>Stationery</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>필기</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>취미</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<span>MonamiPet</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>Puppy`s Diary</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>훈련</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>노하우</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>일상</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>푸드</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<span>Craft&amp;Hobby</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>DIY</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>Gift</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>인테리어</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<span>Monarte</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<span>교육</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>미술</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="event">
+						<a href="#" class="header_menu_a6">
+							<span>
+								<small class="header_menu_small6">이벤트</small>
+								Event
+							</span>
+						</a>
+						<div class="subnav">
+							<ul>
+								<li>
+									<a href="#">
+										<span>이벤트</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>기획전</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>아울렛</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="util">
+				<div class="popup_coupon" th:if="${session.login == null}">
+					<a href="#" class="btn_text">10% Coupon</a>
+					<a href="#" class="btn_close" title="닫기"></a>
+				</div>
+				<ul>
+					<li th:if="${session.login != null}">
+						<a href="#" class="btn-person">
+							<strong>[[${session.login.name}]]</strong>
+						</a>
+						<a href="/member/logout" class="logout">로그아웃</a>
+					</li>
+					<li>
+						<button class="btn-cart" onclick="cartList()">
+							<th:block th:if="${session.login != null}">
+								<input type="hidden" class="hidden_id" th:value="${session.login.id}">
+								<em class="cartCnt"></em>
+							</th:block>
+						</button>
+					</li>
+					<li class="pop-member-li" th:if="${session.login == null}">
+						<a href="#" class="btn-member"></a>
+						<div class="popinfo">
+							<a href="/member/login">로그인</a>
+							<a href="/member/reg-page1">회원가입</a>
+							<a href="#">비회원로그인</a>
+						</div>
+					</li>
+					<li th:if="${session.login != null}">
+						<a href="/member/mypagePwdCheck" class="btn-mypage">마이페이지</a>
+					</li>
+					<li>
+						<a href="#" class="btn-search">검색</a>
+					</li>
+				</ul>
+			</div>
+			<div class="popSearch">
+				
+			</div>
+		</div>
+	</header>
+</body>
+</html>

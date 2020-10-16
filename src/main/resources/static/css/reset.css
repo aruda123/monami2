@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* //////공통적용////////////////////// */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR:wght@500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	letter-spacing: -0.025em;
+	font-family: "Lato", "Noto Sans KR", sans-serif, 
+				 Malgungothic, "맑은고딕", Dotum, "돋움";
+}
+h1{
+	position: absolute; 
+	left:-9999px;
+}
+li{
+	list-style: none;
+	float: left;
+}
+input, select, textarea, button {
+	font: inherit; 
+	color: inherit; 
+	vertical-align: middle; 
+}
+a{
+	text-decoration:none;
+	color: #000;
+}
+table{
+	border-spacing: 0;
+}
+em{
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0;
+}
+img{
+	vertical-align: top;
+}
+main div{
+	overflow: hidden;
+	height: auto;
+}
+strong{
+	font-weight: 400;
+}
+address {
+	font-style: normal;
+}
+fieldset {
+	border: none;
+}
+select{
+	display: none;
+}
+input[type=text], input[type=number], input[type=password] {
+	position: relative;
+	padding: 0 20px;
+	width: 490px;
+	height: 40px;
+	line-height: 38px;
+	color: #000;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+input:focus{
+	border: none;
+	outline: 1px solid #000; 
+	
+}
+input[type=checkbox]{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	outline: none;
+}
+button, label {
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+}
+a:hover {
+	cursor: pointer;
+}
+/* /////////////////////////////// */
+
+
+

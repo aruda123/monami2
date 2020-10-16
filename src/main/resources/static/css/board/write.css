@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import url("../common.css");
+
+
+#write-wrap{
+	display: flex;
+	justify-content: center;
+}
+#write-wrap .write-div{
+	text-align: center;
+}
+#write-wrap .write-div>span{
+	font-size: 40px;
+	font-weight: 700;	
+}
+#write-wrap .write-div>div{
+	margin-top: 40px;
+}
+#write-wrap .write-div div form input{
+	display: block;
+	margin-bottom: 20px;
+}
+#write-wrap .write-div div form input[type=checkbox]{
+	display: inline-block;
+	margin: 0;
+}
+#write-wrap .write-div .label-div{
+	text-align: left;
+}
+#write-wrap .write-div .label-div span{
+	padding-right: 20px;
+}
+
+
+#write-wrap .write-div .btn{
+	margin-top: 30px;
+}
+#write-wrap .write-div .btn button{
+	display: inline-block;
+	width: 100px;
+	border: 1px solid #ccc;
+	margin-right: 20px;
+	padding: 5px;
+	background-color: #fff;
+}
+
