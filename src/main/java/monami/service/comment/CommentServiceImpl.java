@@ -1,12 +1,16 @@
 package monami.service.comment;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Vector;
+
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import monami.domain.dto.CommentDTO;
+import monami.domain.dto.ReplyUpdateDTO;
 import monami.domain.entity.Comment;
 import monami.domain.entity.CommentRepository;
 
@@ -35,6 +39,13 @@ public class CommentServiceImpl implements CommentService{
 	@Override
 	public void delete(long no) {
 		repository.deleteById(no);
+	}
+
+	@Override
+	@Transactional
+	public void update(ReplyUpdateDTO dto) {
+		Comment result = repository.findById(dto.getNo()).orElse(null);
+		result.update(dto.getContent());
 	}
 
 }

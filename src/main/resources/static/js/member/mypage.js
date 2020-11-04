@@ -20,7 +20,7 @@ function mypagechange(){
 		return false;
 	}else if(!pwd_check1.test(pwd.val()) && !pwd_check2.test(pwd.val()) && !pwd_check3.test(pwd.val()) && !pwd_check4.test(pwd.val())){
 		pwd.next('.alterror').css("display", "block");
-		pwd.next('.alterror').text("입력한 비밀번호를 확인해주세요.");
+		pwd.next('.alterror').text("영문/숫자/특수문자 중 2가지 조합, 6~16자 이내");
 		pwd.focus();
 		return false;
 	}else{

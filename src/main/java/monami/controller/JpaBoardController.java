@@ -20,6 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 import lombok.RequiredArgsConstructor;
 import monami.domain.dto.BoardDTO;
 import monami.domain.dto.CommentDTO;
+import monami.domain.dto.ReplyUpdateDTO;
 import monami.service.BoardService;
 import monami.service.comment.CommentService;
 
@@ -120,6 +121,14 @@ public class JpaBoardController {
 	public String commentDelete(@Param("no") long no) throws IOException {
 		comment.delete(no);
 		return "삭제되었습니다.";
+	}
+	
+	//댓글 수정 처리
+	@PostMapping("/board/replyUpdate")
+	@ResponseBody
+	public String replyUpdate(ReplyUpdateDTO dto) {
+		comment.update(dto);
+		return "수정되었습니다.";
 	}
 	
 }

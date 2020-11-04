@@ -13,11 +13,13 @@ import javax.persistence.Table;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import monami.domain.dto.ReplyUpdateDTO;
 
 @Entity
 @Getter
@@ -47,6 +49,7 @@ public class Comment {
 	private String user_ip;
 	
 	@CreatedDate
+	@LastModifiedDate
 	private LocalDateTime reg_date;
 
 	@Builder
@@ -56,6 +59,11 @@ public class Comment {
 		this.id = id;
 		this.content = content;
 		this.user_ip = user_ip;
+	}
+	
+	public Comment update(String content) {
+		this.content = content;
+		return this;
 	}
 
 }

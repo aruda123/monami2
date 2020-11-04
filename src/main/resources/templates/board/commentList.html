@@ -21,23 +21,63 @@
 			});
 		}
 	}
+	
+	//댓글 수정버튼
+	$(".replyUpdateBtn").click(function(){
+		var parent = $(this).parent();
+		var parents = $(this).parents();
+		parent.hide();
+		parents.siblings(".okBtn").show();
+		parents.siblings(".content").hide();
+		parents.siblings(".updateContent").show();
+	});
+	
+	//댓글 수정 취소버튼
+	$(".cancelBtn").click(function(){
+		var parent = $(this).parent();
+		var parents = $(this).parents();
+		parent.hide();
+		parents.siblings(".replyBtn").show();
+		parents.siblings(".content").show();
+		parents.siblings(".updateContent").hide();
+	});
+	
+	//댓글 수정 처리
+	$(".updateBtn").click(function(){
+		var parents = $(this).parents();
+		var no = parents.siblings(".commentNo").val();
+		var content = parents.siblings(".updateContent").val();
+		$.ajax({
+			url:"/board/replyUpdate",
+			type: "post",
+			data: {"no" : no, "content" : content},
+			success: function(result){
+				alert(result);
+				location.reload();
+			}
+		});
+	});
+	
 </script>
 
 	<ul id="reply">
 		<li th:each="co : ${comment}">
 			<span class="id">[[${co.id}]]</span>
-			<span class="date" th:text="${#temporals.format(co.reg_date, 'yyyy-MM-dd')}"></span>
+			<span class="date" th:text="${#temporals.format(co.reg_date, 'yyyy-MM-dd HH:mm')}"></span>
 			<span class="content">[[${co.content}]]</span>
+			<input type="text" th:value="${co.content}" class="updateContent" style="display: none; padding: 10px">
 			<th:block th:if="${session.login} != null">
 				<div class="btn-div" th:if="${session.login.id} == ${co.id}">
 					<input type="hidden" class="commentNo" th:value="${co.no}">
 					<div class="replyBtn">
-						<button type="button" class="replyUpdateDtn">수정</button>
+						<button type="button" class="replyUpdateBtn">수정</button>
 						<button type="button" class="replyDeleteBtn">삭제</button>
+					</div>
+					<div class="okBtn" style="display: none">
+						<button type="button" class="updateBtn">확인</button>
+						<button type="button" class="cancelBtn">취소</button>
 					</div>
 				</div>
 			</th:block>
 		</li>
 	</ul>
-	
-	

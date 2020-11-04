@@ -74,8 +74,8 @@
 				<div class="text-div">
 					<div>
 						<div class="top-btn-div" th:if="${session.login != null}">
-							<a class="update-btn" onclick="updateBtn()" th:if="${#strings.equals(session.login.id, 'aruda123')}">수정</a>
-							<a class="delete-btn" onclick="return deleteBtn()" th:href="|/board/stationery-delete/${dto.no}|" th:if="${#strings.equals(session.login.id, 'aruda123')}">삭제</a>
+							<a class="update-btn" onclick="updateBtn()" th:if="${#strings.equals(session.login.id, 'admin')}">수정</a>
+							<a class="delete-btn" onclick="return deleteBtn()" th:href="|/board/stationery-delete/${dto.no}|" th:if="${#strings.equals(session.login.id, 'admin')}">삭제</a>
 						</div>
 						<span class="brand">[[${dto.brand}]]</span>
 						<span class="title">[[${dto.title}]]</span>

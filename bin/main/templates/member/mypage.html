@@ -76,14 +76,14 @@
 						<li>
 							<label>
 								<strong>비밀번호<em class="bl-need">*</em></strong>
-								<input type="password" class="reg_pwd" name="pwd" placeholder="영문/숫자/특수문자 중 2가지 조합, 6~16자 이내" maxlength="10">
+								<input type="password" class="reg_pwd" name="pwd" th:value="${session.login.pwd}" maxlength="10">
 								<span class="alterror">비밀번호를 확인해주세요</span>
 							</label>
 						</li>
 						<li>
 							<label>
 								<strong>비밀번호확인<em class="bl-need">*</em></strong>
-								<input type="password" class="reg_pwd_check" placeholder="비밀번호 재입력" maxlength="16">
+								<input type="password" class="reg_pwd_check" th:value="${session.login.pwd}" maxlength="16">
 								<span class="alterror">입력한 비밀번호가 서로 	일치하지 않습니다.</span>
 							</label>
 						</li>

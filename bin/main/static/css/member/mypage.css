@@ -118,6 +118,7 @@
 	font-weight: normal;
 }
 .member .address input[type=button]{
+	cursor: pointer;
 	width: 138px;
 	padding: 0;
 }

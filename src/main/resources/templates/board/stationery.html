@@ -16,7 +16,7 @@
 				<h1>Stationery메뉴</h1>
 				<div>
 					<div class="board-write" th:if="${session.login != null}">
-						<a href="/board/write" th:if="${#strings.equals(session.login.id, 'aruda123')}">글등록</a>
+						<a href="/board/write" th:if="${#strings.equals(session.login.id, 'admin')}">글등록</a>
 					</div>
 					<ul class="depth2">
 						<li class="active">
